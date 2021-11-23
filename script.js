@@ -16,13 +16,11 @@ xhr.onload = () => {
         }
         return 0
       })
-console.log(array);
-console.log(arrayMovie);
 movieSort.forEach(element => {
     let movieBlock = document.createElement('div')
 movieBlock.classList.add('movies-block')
 main.append(movieBlock)
-movieBlock.innerHTML = ` <a href=""><img src="${element.images['Poster Art'].url}" /></a>
+movieBlock.innerHTML = ` <a href="#"><img src="${element.images['Poster Art'].url}" /></a>
 <p>${element.title}</p> <h5>${element.releaseYear}</h5>`
 });
 }
